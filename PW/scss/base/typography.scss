@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as vars;
+
+// Loop @each untuk styling heading (Syarat #7)
+$headings: (
+  'h1': 2.5rem,
+  'h2': 1.8rem,
+  'h3': 1.3rem
+);
+
+@each $tag, $size in $headings {
+  #{$tag} {
+    font-family: vars.$font-heading;
+    font-size: $size;
+    color: vars.$text-main;
+    margin-bottom: vars.$spacing-sm;
+  }
+}
+
+.eyebrow {
+  font-family: vars.$font-mono;
+  color: vars.$primary-color;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}

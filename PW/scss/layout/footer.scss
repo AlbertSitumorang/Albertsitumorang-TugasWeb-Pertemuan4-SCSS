@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as vars;
+
+.site-footer {
+  padding: vars.$spacing-md 0;
+  border-top: 1px solid vars.$border-color;
+  text-align: center;
+  color: vars.$text-muted;
+
+  .back-to-top {
+    display: inline-block;
+    margin-top: vars.$spacing-xs;
+  }
+}

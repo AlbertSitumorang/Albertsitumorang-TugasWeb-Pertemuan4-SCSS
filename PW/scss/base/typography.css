@@ -1,0 +1,27 @@
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5rem;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  font-family: "JetBrains Mono", monospace;
+  color: #4fd1c5;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}/*# sourceMappingURL=typography.css.map */

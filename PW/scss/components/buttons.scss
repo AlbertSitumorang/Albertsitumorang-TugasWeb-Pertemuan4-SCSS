@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as vars;
+
+.btn {
+  display: inline-block;
+  padding: vars.$spacing-xs vars.$spacing-md;
+  border-radius: 4px;
+  font-family: vars.$font-heading;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+
+  // Nesting level 2
+  &-primary {
+    background-color: vars.$primary-color;
+    color: vars.$bg-dark;
+
+    // Nesting level 3
+    &:hover {
+      background-color: vars.$primary-hover;
+    }
+  }
+}

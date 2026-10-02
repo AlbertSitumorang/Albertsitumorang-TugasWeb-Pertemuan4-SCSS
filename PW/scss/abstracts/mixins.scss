@@ -1,0 +1,24 @@
+@use 'variables' as vars;
+
+// Mixin 1: Flexbox Alignment
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Mixin 2: Grid Layout Grid Responsive
+@mixin responsive-grid($min-width: 300px, $gap: vars.$spacing-lg) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: $gap;
+}
+
+// Mixin 3: Reusable Card Styling
+@mixin card-style($bg: vars.$bg-card, $padding: vars.$spacing-md) {
+  background-color: $bg;
+  border: 1px solid vars.$border-color;
+  border-radius: 8px;
+  padding: $padding;
+}

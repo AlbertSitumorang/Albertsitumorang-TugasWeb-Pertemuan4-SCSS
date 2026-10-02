@@ -1,0 +1,25 @@
+#contact-form .field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+#contact-form .field {
+  margin-bottom: 1rem;
+}
+#contact-form .field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+#contact-form .field input, #contact-form .field textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  border-radius: 4px;
+}
+#contact-form .field input:focus, #contact-form .field textarea:focus {
+  border-color: #4fd1c5;
+  outline: none;
+}/*# sourceMappingURL=form.css.map */

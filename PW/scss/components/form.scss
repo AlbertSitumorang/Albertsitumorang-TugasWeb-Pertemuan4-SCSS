@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as vars;
+
+#contact-form {
+  // Nesting Level 1
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: vars.$spacing-sm;
+  }
+
+  // Nesting Level 1
+  .field {
+    margin-bottom: vars.$spacing-sm;
+
+    // Nesting Level 2
+    label {
+      display: block;
+      margin-bottom: vars.$spacing-xs;
+      font-size: 0.9rem;
+    }
+
+    // Nesting Level 2
+    input, textarea {
+      width: 100%;
+      padding: vars.$spacing-xs;
+      background-color: vars.$bg-card;
+      border: 1px solid vars.$border-color;
+      color: vars.$text-main;
+      border-radius: 4px;
+
+      // Nesting Level 3
+      &:focus {
+        border-color: vars.$primary-color;
+        outline: none;
+      }
+    }
+  }
+}

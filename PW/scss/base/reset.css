@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #4fd1c5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #38b2ac;
+}/*# sourceMappingURL=reset.css.map */
